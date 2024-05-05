@@ -72,14 +72,20 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      animation: {
-        marquee: 'marquee 5s linear infinite',
-      },
+       
       keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
+        marqueeLeft: {
+          '0%': { transform: 'translateX(-10%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        marqueeRight: {
+          '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
-        }
+        },
+      },
+      animation: {
+        marqueeLeft: 'marqueeLeft 10s linear infinite',
+        marqueeRight: 'marqueeRight 10s linear infinite',
       },
     },
   },

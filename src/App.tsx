@@ -89,17 +89,20 @@ function App() {
               <li> React JS lỏ</li>
             </ul>
           </div>
-
-          <div className="overflow-x-hidden w-full">
-            <div className="py-12 animate-marquee whitespace-nowrap ">
-              <span className="text-xl text-red-500 mx-4">
-                Tình trạng: Vẫn còn độc thân
-              </span>
-              <span className="text-xl text-red-500 mx-4">
-                Tình trạng: Vẫn còn độc thân
-              </span>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="overflow-x-hidden m-2">
+        <div className=" animate-marqueeLeft whitespace-nowrap">
+          <span className="text-xl bg-red-200 bold rounded-2xl ">
+            Tình trạng hiện tại: vẫn còn độc thân - chưa có ai yêu
+          </span>
+        </div>
+      </div>
+      <div className="overflow-x-hidden">
+        <div className=" animate-marqueeRight whitespace-nowrap">
+          <span className="text-xl  bg-blue-200 bold rounded-2xl ">
+            Tình trạng hiện tại: vẫn còn độc thân - chưa có ai yêu
+          </span>
         </div>
       </div>
     </>
