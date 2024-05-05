@@ -6,11 +6,12 @@ import {
   SiGmail,
 } from "react-icons/si";
 import avatar from "./image/avatar.jpg";
+
 function App() {
   return (
     <>
       <div className="grid grid-cols-3 m-2 ">
-        <div className=" p-4 bg-slate-400 rounded-xl col-span-2">
+        <div className=" p-4 bg-slate-400 rounded-xl col-span-2 ">
           <img
             className="rounded-full w-20 h-20 border-2  "
             src={avatar}
@@ -85,7 +86,19 @@ function App() {
             <ul className="pl-8 list-disc">
               <li> Ăn bám</li>
               <li> Lười biếng</li>
+              <li> React JS lỏ</li>
             </ul>
+          </div>
+
+          <div className="overflow-x-hidden w-full">
+            <div className="py-12 animate-marquee whitespace-nowrap ">
+              <span className="text-xl text-red-500 mx-4">
+                Tình trạng: Vẫn còn độc thân
+              </span>
+              <span className="text-xl text-red-500 mx-4">
+                Tình trạng: Vẫn còn độc thân
+              </span>
+            </div>
           </div>
         </div>
       </div>
