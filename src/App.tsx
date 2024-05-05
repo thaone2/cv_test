@@ -20,6 +20,9 @@ function App() {
                 <a target="blank" href="https://www.tiktok.com/@hnim_oaht">
                   <SiTiktok className="hover:text-orange-200 h-8 w-8 m-2" />
                 </a>
+                <a target="blank" href="https://github.com/thaone2">
+                  <SiGithub className="hover:text-pink-400 h-8 w-8 m-2" />
+                </a>
               </div>
             </div>
 
