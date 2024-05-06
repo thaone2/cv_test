@@ -5,11 +5,32 @@ import {
   SiTiktok,
   SiGmail,
 } from "react-icons/si";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Calendar } from "@/components/ui/calendar";
+import * as React from "react";
 import avatar from "./image/avatar.jpg";
 
 function App() {
+  const [date, setDate] = React.useState<Date | undefined>(new Date());
   return (
-    <>
+    <div className="">
       <div className="grid grid-cols-3 m-2 ">
         <div className=" p-4 bg-slate-400 rounded-xl col-span-2 ">
           <img
@@ -71,8 +92,8 @@ function App() {
           </div>
         </div>
 
-        <div className="col-span-1 bg-white">
-          <div className="p-4">
+        <div className="col-span-1 ">
+          <div className="p-4 border rounded-xl mx-4 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
               <li> Học ngu</li>
@@ -81,7 +102,7 @@ function App() {
               <li> Nghèo</li>
             </ul>
           </div>
-          <div className="p-4">
+          <div className="p-4 border rounded-xl m-4 shadow-sm shadow-blue-400">
             <p className="flex bold ">SKILL</p>
             <ul className="pl-8 list-disc">
               <li> Ăn bám</li>
@@ -89,23 +110,60 @@ function App() {
               <li> React JS lỏ</li>
             </ul>
           </div>
+          <Card className=" m-4 border shadow-sm rounded-xl shadow-green-500">
+            <CardHeader>
+              <CardTitle>Create project</CardTitle>
+              <CardDescription>
+                Deploy your new project in one-click.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form>
+                <div className="grid w-full items-center gap-4">
+                  <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="name">Name</Label>
+                    <Input id="name" placeholder="Name of your project" />
+                  </div>
+                  <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="framework">Framework</Label>
+                    <Select>
+                      <SelectTrigger id="framework">
+                        <SelectValue placeholder="Select" />
+                      </SelectTrigger>
+                      <SelectContent position="popper" className="bg-white">
+                        <SelectItem value="next">Next.js</SelectItem>
+                        <SelectItem value="sveltekit">SvelteKit</SelectItem>
+                        <SelectItem value="astro">Astro</SelectItem>
+                        <SelectItem value="nuxt">Nuxt.js</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+              </form>
+            </CardContent>
+            <CardFooter className="flex justify-between">
+              <Button variant="outline">Cancel</Button>
+              <Button className="border border-black">Deploy</Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
+      {/* FOOTER */}
       <div className="overflow-x-hidden m-2">
         <div className=" animate-marqueeLeft whitespace-nowrap">
           <span className="text-xl bg-red-200 bold rounded-2xl ">
-            Tình trạng hiện tại: vẫn còn độc thân - chưa có ai yêu
+            Tình trạng hiện tại: vẫn còn độc thân
           </span>
         </div>
       </div>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden mb-2">
         <div className=" animate-marqueeRight whitespace-nowrap">
           <span className="text-xl  bg-blue-200 bold rounded-2xl ">
-            Tình trạng hiện tại: vẫn còn độc thân - chưa có ai yêu
+            Tình trạng hiện tại: vẫn còn độc thân
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
