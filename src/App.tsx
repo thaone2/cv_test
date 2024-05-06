@@ -6,7 +6,6 @@ import {
   SiGmail,
 } from "react-icons/si";
 
-import * as React from "react";
 import avatar from "./image/avatar.jpg";
 
 function App() {
