@@ -23,12 +23,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Calendar } from "@/components/ui/calendar";
+
 import * as React from "react";
 import avatar from "./image/avatar.jpg";
 
 function App() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
   return (
     <div className="">
       <div className="grid grid-cols-3 m-2 ">
