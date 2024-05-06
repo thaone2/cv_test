@@ -5,24 +5,24 @@ import {
   SiTiktok,
   SiGmail,
 } from "react-icons/si";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import { Button } from "@/components/ui/button";
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
+// import { Input } from "@/components/ui/input";
+// import { Label } from "@/components/ui/label";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 
 import * as React from "react";
 import avatar from "./image/avatar.jpg";
@@ -109,7 +109,7 @@ function App() {
               <li> React JS lỏ</li>
             </ul>
           </div>
-          <Card className=" m-4 border shadow-sm rounded-xl shadow-green-500">
+          {/* <Card className=" m-4 border shadow-sm rounded-xl shadow-green-500">
             <CardHeader>
               <CardTitle>Create project</CardTitle>
               <CardDescription>
@@ -144,7 +144,7 @@ function App() {
               <Button variant="outline">Cancel</Button>
               <Button className="border border-black">Deploy</Button>
             </CardFooter>
-          </Card>
+          </Card> */}
         </div>
       </div>
       {/* FOOTER */}
