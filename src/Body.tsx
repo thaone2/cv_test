@@ -14,13 +14,10 @@ import {
 //   CardTitle,
 // } from "@/components/ui/card";
 
-import { Calendar } from "@/components/ui/calendar";
+// import { Calendar } from "@/components/ui/calendar";
 import avatar from "./image/avatar.jpg";
-import React from "react";
 
 function Body() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
-
   return (
     <div>
       <div className="grid grid-cols-3 m-2">
@@ -173,30 +170,6 @@ function Body() {
               <li> React JS lỏ</li>
             </ul>
           </div> */}
-        {/* test các phần */}
-        {/* <div className="m-4 ">
-            <Card className="bg-white rounded-xl shadow-xs">
-              <CardHeader>
-                <CardTitle>Card Title</CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-          </div> */}
-        {/* <div className="m-4 ">
-            <Calendar
-              mode="single"
-              selected={date}
-              onSelect={setDate}
-              className="border bg-blue-200 text-white rounded-xl shadow-xl"
-            />
-          </div> 
-        </div>*/}
       </div>
     </div>
   );
