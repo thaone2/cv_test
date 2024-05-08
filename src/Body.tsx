@@ -5,14 +5,14 @@ import {
   SiTiktok,
   SiGmail,
 } from "react-icons/si";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
 
 import { Calendar } from "@/components/ui/calendar";
 import avatar from "./image/avatar.jpg";
@@ -23,7 +23,8 @@ function Body() {
 
   return (
     <div>
-      <div className="grid grid-cols-3 m-2 ">
+      <div className="grid grid-cols-3 m-2">
+        {/* bg-slate-400 */}
         <div className=" p-4 bg-slate-400 rounded-xl col-span-2 ">
           <img
             className="rounded-full w-20 h-20 border-2  "
@@ -81,12 +82,81 @@ function Body() {
                 Vietnamese: Native
               </p>
             </div>
+            {/* Phan viet học tiếng Anh */}
+            <div className=" mt-2 p-2 border-4 border-dotted rounded-xl">
+              <h1 className="bold text-white border rounded-xl p-2 text-xl bg-slate-400">
+                1. Simple Present - Thì hiện tại đơn
+              </h1>
+              <div>
+                <p className="pl-4">
+                  Cách dùng: diễn tả một chân lý, một sự thật hiển nhiên, một
+                  thói quen, một hành động thường xuyên xảy ra ở hiện tại
+                  <br />
+                  Example 1: The sun rises in the East
+                  <br />
+                  Example 2: Mary often goes to school by bicycle
+                </p>
+                <p className="bold">Khi dùng với động từ thường</p>
+                <p className="ml-4 bold text-blue-400">
+                  Thể khẳng định: S + Vs/es + O
+                </p>
+                <p className="ml-4 bold text-red-400">
+                  Thể phủ định: S + Do/Does + Not + V
+                </p>
+                <p className="ml-4 bold text-green-400">
+                  Thể nghi vấn: Do/Does + V + O ?
+                </p>
+                <p className="bold">Khi dùng với động từ tobe</p>
+                <p className="ml-4 bold text-blue-400">
+                  Thể khẳng định: S + Am/Is/Are + O
+                </p>
+                <p className="ml-4 bold text-red-400">
+                  Thể phủ định: S + Am/Is/Are + Not + O
+                </p>
+                <p className="ml-4 bold text-green-400">
+                  Thể nghi vấn: Am/is/are + S + O ?
+                </p>
+                <p className="bold">Từ nhận biết</p>
+                <p className="ml-4">
+                  Always, every, usually, often, generally, frequently, ...
+                </p>
+              </div>
+
+              <h1 className="bold text-white border rounded-xl p-2 text-xl bg-slate-400">
+                2. Present continuous - Thì hiện tại tiếp diễn
+              </h1>
+              <div>
+                <p className="pl-4">
+                  Cách dùng: Diễn tả một hành động đang diễn ra và kéo dài một
+                  thời gian ở hiện tại.
+                  <br />
+                  Example 1: The children are playing football now
+                  <br />
+                  Example 2: Look! the child is crying
+                </p>
+                <p className="bold">Công thức</p>
+                <p className="ml-4 bold text-blue-400">
+                  Thể khẳng định: S + be(am/is/are) + V_ing + O
+                </p>
+                <p className="ml-4 bold text-red-400">
+                  Thể phủ định: S + be + Not + V_ing + O
+                </p>
+                <p className="ml-4 bold text-green-400">
+                  Thể nghi vấn: Be + S + V_ing + O ?
+                </p>
+
+                <p className="bold">Từ nhận biết</p>
+                <p className="ml-4">
+                  Now, Right now, at present, at the moment, ...
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* left */}
+        {/* Right */}
         <div className="col-span-1 ">
-          <div className="p-4 border rounded-xl mx-4 shadow-sm shadow-red-400">
+          <div className="p-4 bg-white border rounded-xl mx-4 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
               <li> Học ngu</li>
@@ -95,7 +165,7 @@ function Body() {
               <li> Nghèo</li>
             </ul>
           </div>
-          <div className="p-4 border rounded-xl m-4 shadow-sm shadow-blue-400">
+          <div className="p-4 bg-white border rounded-xl m-4 shadow-sm shadow-blue-400">
             <p className="flex bold ">SKILL</p>
             <ul className="pl-8 list-disc">
               <li> Ăn bám</li>
@@ -104,8 +174,8 @@ function Body() {
             </ul>
           </div>
           {/* test các phần */}
-          <div className="m-4">
-            <Card className="rounded-xl shadow-xs">
+          {/* <div className="m-4 ">
+            <Card className="bg-white rounded-xl shadow-xs">
               <CardHeader>
                 <CardTitle>Card Title</CardTitle>
                 <CardDescription>Card Description</CardDescription>
@@ -117,7 +187,7 @@ function Body() {
                 <p>Card Footer</p>
               </CardFooter>
             </Card>
-          </div>
+          </div> */}
           <div className="m-4 ">
             <Calendar
               mode="single"
