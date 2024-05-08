@@ -25,7 +25,7 @@ function Body() {
     <div>
       <div className="grid grid-cols-3 m-2">
         {/* bg-slate-400 */}
-        <div className=" p-4 bg-slate-400 rounded-xl col-span-2 ">
+        <div className=" p-4 bg-slate-400 rounded-xl col-span-3 ">
           <img
             className="rounded-full w-20 h-20 border-2  "
             src={avatar}
@@ -155,7 +155,7 @@ function Body() {
         </div>
 
         {/* Right */}
-        <div className="col-span-1 ">
+        {/* <div className="col-span-1 ">
           <div className="p-4 bg-white border rounded-xl mx-4 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
@@ -172,9 +172,9 @@ function Body() {
               <li> Lười biếng</li>
               <li> React JS lỏ</li>
             </ul>
-          </div>
-          {/* test các phần */}
-          {/* <div className="m-4 ">
+          </div> */}
+        {/* test các phần */}
+        {/* <div className="m-4 ">
             <Card className="bg-white rounded-xl shadow-xs">
               <CardHeader>
                 <CardTitle>Card Title</CardTitle>
@@ -188,15 +188,15 @@ function Body() {
               </CardFooter>
             </Card>
           </div> */}
-          <div className="m-4 ">
+        {/* <div className="m-4 ">
             <Calendar
               mode="single"
               selected={date}
               onSelect={setDate}
               className="border bg-blue-200 text-white rounded-xl shadow-xl"
             />
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     </div>
   );
