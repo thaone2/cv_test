@@ -84,8 +84,8 @@ module.exports = {
         },
       },
       animation: {
-        marqueeLeft: 'marqueeLeft 10s linear infinite',
-        marqueeRight: 'marqueeRight 10s linear infinite',
+        marqueeLeft: 'marqueeLeft 8s linear infinite',
+        marqueeRight: 'marqueeRight 8s linear infinite',
       },
     },
   },
