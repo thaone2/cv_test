@@ -4,8 +4,8 @@ import LearnEnglish from "./router/LearnEnglish";
 function App() {
   return (
     <div className="">
-      <nav>
-        <ul className="flex bold text-xl p-4 bg-gray-500 text-white">
+      <nav className="fixed top-0 w-full z-10">
+        <ul className="flex bold text-xl text-blue-300  bg-white">
           <li className="m-2">
             <Link to="/">Home</Link>
           </li>
@@ -14,10 +14,12 @@ function App() {
           </li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/learn-english" element={<LearnEnglish />} />
-      </Routes>
+      <div className="pt-12">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/learn-english" element={<LearnEnglish />} />
+        </Routes>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import avatar from "@/image/avatar.jpg";
 import omeme from "@/image/omeme.png";
 function Home() {
   return (
-    <div>
+    <div className="">
       <div className="grid grid-cols-3 m-2">
         {/* bg-slate-400 */}
         <div className=" p-4 bg-slate-400 rounded-xl col-span-2 ">
@@ -69,13 +69,25 @@ function Home() {
                 Vietnamese: Native
               </p>
             </div>
-            {/* Phan viet học tiếng Anh */}
+            {/* Phan video xam */}
+            <div className=" aspect-video p-2 ">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/kCoz_40-LGc?si=i6S8tQk_0Az1whyA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
 
         {/* Right */}
         <div className="col-span-1 ">
-          <div className="p-4 bg-white border rounded-xl mx-4 shadow-sm shadow-red-400">
+          <div className="p-2 bg-white border rounded-xl mx-2 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
               <li> Học ngu</li>
@@ -84,7 +96,7 @@ function Home() {
               <li> Nghèo</li>
             </ul>
           </div>
-          <div className="p-4 bg-white border rounded-xl m-4 shadow-sm shadow-blue-400">
+          <div className="p-2 bg-white border rounded-xl m-2 shadow-sm shadow-blue-400">
             <p className="flex bold ">SKILL</p>
             <ul className="pl-8 list-disc">
               <li> Ăn bám</li>
@@ -94,6 +106,7 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* fooyer */}
       <div className="overflow-x-hidden m-2">
         <div className=" animate-marqueeLeft whitespace-nowrap">
           {/* <span className="text-xl bg-red-200 bold rounded-2xl ">
