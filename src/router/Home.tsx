@@ -43,7 +43,7 @@ function Home() {
               </div>
               <p className="flex items-center p-2 ">
                 <SiGmail className="text-green-400 h-8 w-8 m-2" />
-                <p className=" text-xs">khuong123w@gmail.com</p>
+                <p className=" text-xs">hmt46856@gmail.com</p>
               </p>
               <p className="p-2 text-xs"> Phone: 0925141017</p>
             </div>
@@ -70,18 +70,6 @@ function Home() {
               </p>
             </div>
             {/* Phan video xam */}
-            <div className=" aspect-video p-2 ">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/kCoz_40-LGc?si=i6S8tQk_0Az1whyA"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
           </div>
         </div>
 
@@ -106,7 +94,19 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* fooyer */}
+      {/* footer */}
+      <div className=" p-2 ">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/SeWt7IpZ0CA?si=MZtFdgE5s5jR5JzD"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="overflow-x-hidden m-2">
         <div className=" animate-marqueeLeft whitespace-nowrap">
           {/* <span className="text-xl bg-red-200 bold rounded-2xl ">
