@@ -1,6 +1,6 @@
 function LearnEnglish() {
   return (
-    <div className="m-2">
+    <div className="mt-2 mx-2">
       <div className=" mt-2 p-2 border-4 border-dotted rounded-xl">
         <h1 className="bold text-white border rounded-xl p-2 text-xl bg-slate-400">
           1. Simple Present Tense - Thì hiện tại đơn

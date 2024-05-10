@@ -43,16 +43,16 @@ function Home() {
               </div>
               <p className="flex items-center p-2 ">
                 <SiGmail className="text-green-400 h-8 w-8 m-2" />
-                <p className=" text-xs">hmt46856@gmail.com</p>
+                <p className=" text-xs text-gray-500">hmt46856@gmail.com</p>
               </p>
-              <p className="p-2 text-xs"> Phone: 0925141017</p>
+              <p className="p-2 text-xs text-gray-500"> Phone: 0925141017</p>
             </div>
 
             <div className=" mt-2 border-4 border-dotted rounded-xl">
               <p className="bold p-2  text-slate-400 border-b-4 border-dotted">
                 EDUCATION
               </p>
-              <p className="text-xs p-2">
+              <p className="text-xs p-2 text-gray-500">
                 2020 - 2024: Trường đại học Công nghiệp Tp.HCM
                 <br />
                 GPA: 3.0
@@ -63,7 +63,7 @@ function Home() {
               <p className="bold p-2  text-slate-400 border-b-4 border-dotted">
                 LANGUAGE
               </p>
-              <p className="text-xs p-2">
+              <p className="text-xs p-2 text-gray-500">
                 English: TOEIC:xxx
                 <br />
                 Vietnamese: Native
@@ -75,7 +75,7 @@ function Home() {
 
         {/* Right */}
         <div className="col-span-1 ">
-          <div className="p-2 bg-white border rounded-xl mx-2 shadow-sm shadow-red-400">
+          <div className="p-2 bg-gray-400 border rounded-xl mx-2 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
               <li> Học ngu</li>
@@ -84,7 +84,7 @@ function Home() {
               <li> Nghèo</li>
             </ul>
           </div>
-          <div className="p-2 bg-white border rounded-xl m-2 shadow-sm shadow-blue-400">
+          <div className="p-2 bg-gray-400 border rounded-xl m-2 shadow-sm shadow-blue-400">
             <p className="flex bold ">SKILL</p>
             <ul className="pl-8 list-disc">
               <li> Ăn bám</li>
@@ -115,7 +115,7 @@ function Home() {
           <img className="w-40 h-40" src={omeme} alt="" />
         </div>
       </div>
-      <div className="overflow-x-hidden mb-2">
+      <div className="overflow-x-hidden">
         <div className=" animate-marqueeRight whitespace-nowrap">
           {/* <span className="text-xl  bg-blue-200 bold rounded-2xl ">
             Tình trạng hiện tại: vẫn còn độc thân{" "}
