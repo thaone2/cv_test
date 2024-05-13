@@ -95,7 +95,7 @@ function Home() {
         </div>
       </div>
       {/* footer */}
-      <div className=" p-2 ">
+      {/* <div className=" p-2 ">
         <iframe
           width="560"
           height="315"
@@ -106,7 +106,7 @@ function Home() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
       <div className="overflow-x-hidden m-2">
         <div className=" animate-marqueeLeft whitespace-nowrap">
           {/* <span className="text-xl bg-red-200 bold rounded-2xl ">
