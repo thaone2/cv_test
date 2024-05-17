@@ -15,8 +15,6 @@ function ListMusic() {
     <div>
       <p>Muốn được cùng em beat</p>
       <p>Quá lâu</p>
-      <p>Dương đẹp trai</p>
-      <p>Khánh tay to</p>
       <div className=" m-2">
         <Dialog>
           <DialogTrigger asChild>

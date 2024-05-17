@@ -9,17 +9,17 @@ import avatar from "@/image/avatar.jpg";
 import omeme from "@/image/omeme.png";
 function Home() {
   return (
-    <div className="">
-      <div className="grid grid-cols-3 m-2">
+    <div>
+      <div className="grid grid-cols-3 m-2 ">
         {/* bg-slate-400 */}
-        <div className=" p-4 bg-slate-400 rounded-xl col-span-2 ">
+        <div className=" p-4 bg-slate-400 dark:bg-gray-900 rounded-xl col-span-2 sm:col-span-3 md:col-span-2 ">
           <img
             className="rounded-full w-20 h-20 border-2  "
             src={avatar}
             alt=""
           />
           <div className="text-2xl text-white bold">Huỳnh Minh Thạo</div>
-          <div className="bg-white mt-2 rounded-xl p-4 ">
+          <div className="bg-blue-200 mt-2 rounded-xl p-4 dark:bg-gray-900 ">
             <div className="border-dotted border-4 rounded-xl">
               <p className="bold text-slate-400 p-2 border-b-4 border-dotted ">
                 CONTACT
@@ -42,7 +42,7 @@ function Home() {
                 </a>
               </div>
               <p className="flex items-center p-2 ">
-                <SiGmail className="text-green-400 h-8 w-8 m-2" />
+                <SiGmail className="text-red-400 h-8 w-8 m-2" />
                 <p className=" text-xs text-gray-500">hmt46856@gmail.com</p>
               </p>
               <p className="p-2 text-xs text-gray-500"> Phone: 0925141017</p>
@@ -74,8 +74,8 @@ function Home() {
         </div>
 
         {/* Right */}
-        <div className="col-span-1 ">
-          <div className="p-2 bg-gray-400 border rounded-xl mx-2 shadow-sm shadow-red-400">
+        <div className="col-span-1 sm:bg-yellow-200 sm:col-span-0 sm:flex sm:flex-col sm:col-span-3 md:bg-red-200 md:col-span-1 md:flex md:flex-col lg:bg-green-200 2xl:bg-pink-400 ">
+          <div className="p-2 bg-gray-400 dark:bg-gray-900 border rounded-xl mx-2 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
               <li> Học ngu</li>
@@ -84,7 +84,7 @@ function Home() {
               <li> Nghèo</li>
             </ul>
           </div>
-          <div className="p-2 bg-gray-400 border rounded-xl m-2 shadow-sm shadow-blue-400">
+          <div className="p-2 bg-gray-400 dark:bg-gray-900 border rounded-xl m-2 shadow-sm shadow-blue-400">
             <p className="flex bold ">SKILL</p>
             <ul className="pl-8 list-disc">
               <li> Ăn bám</li>
@@ -117,9 +117,6 @@ function Home() {
       </div>
       <div className="overflow-x-hidden">
         <div className=" animate-marqueeRight whitespace-nowrap">
-          {/* <span className="text-xl  bg-blue-200 bold rounded-2xl ">
-            Tình trạng hiện tại: vẫn còn độc thân{" "}
-          </span> */}
           <img className="w-40 h-40" src={avatar} alt="" />
         </div>
       </div>
