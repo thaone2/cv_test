@@ -1,21 +1,21 @@
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogDescription,
+//   DialogFooter,
+//   DialogHeader,
+//   DialogTitle,
+//   DialogTrigger,
+// } from "@/components/ui/dialog";
+// import { Input } from "@/components/ui/input";
+// import { Label } from "@/components/ui/label";
+// import { Button } from "@/components/ui/button";
 function ListMusic() {
   return (
     <div>
       <p>Muốn được cùng em beat</p>
       <p>Quá lâu</p>
-      <div className=" m-2">
+      {/* <div className=" m-2">
         <Dialog>
           <DialogTrigger asChild>
             <Button className="bg-gray-200" variant="outline">
@@ -56,7 +56,7 @@ function ListMusic() {
             </DialogFooter>
           </DialogContent>
         </Dialog>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -20,6 +20,7 @@ import banner2 from "@/image/banner_2.webp";
 function Shop() {
   return (
     <div>
+      {/* NAVIGATION BAR */}
       <nav className="">
         <ul className="flex justify-around">
           <li>
@@ -74,8 +75,8 @@ function Shop() {
                   <img className="w-full cursor-pointer" src={logo1} alt="" />
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
               <CarouselNext />
+              <CarouselPrevious />
             </Carousel>
           </section>
 

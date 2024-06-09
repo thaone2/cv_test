@@ -78,40 +78,23 @@ function Home() {
           <div className="p-2 bg-gray-400 dark:bg-gray-900 border rounded-xl mx-2 shadow-sm shadow-red-400">
             <p className="flex bold ">SUMMARY</p>
             <ul className="pl-8 list-disc">
-              <li> Học ngu</li>
-              <li> Xấu trai</li>
-              <li> Nhạt</li>
               <li> Nghèo</li>
             </ul>
           </div>
           <div className="p-2 bg-gray-400 dark:bg-gray-900 border rounded-xl m-2 shadow-sm shadow-blue-400">
             <p className="flex bold ">SKILL</p>
             <ul className="pl-8 list-disc">
-              <li> Ăn bám</li>
-              <li> Lười biếng</li>
               <li> React JS lỏ</li>
             </ul>
           </div>
         </div>
       </div>
-      {/* footer */}
-      {/* <div className=" p-2 ">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/SeWt7IpZ0CA?si=MZtFdgE5s5jR5JzD"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div> */}
+
       <div className="overflow-x-hidden m-2">
         <div className=" animate-marqueeLeft whitespace-nowrap">
           {/* <span className="text-xl bg-red-200 bold rounded-2xl ">
-            Tình trạng hiện tại: vẫn còn độc thân
-          </span> */}
+              Tình trạng hiện tại: vẫn còn độc thân
+            </span> */}
           <img className="w-40 h-40" src={omeme} alt="" />
         </div>
       </div>
