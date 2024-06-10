@@ -10,8 +10,9 @@ function Navigation() {
     setDark(!dark);
     document.body.classList.toggle("dark");
   };
+
   return (
-    <div className="flex mb-12">
+    <div className="flex mb-12 ">
       <nav className=" fixed top-0 w-full  dark:bg-[#000000] dark:text-white text-[#6B7384] bg-white">
         <ul className="flex bold text-lg">
           <li className="m-1 p-1   hover:text-[#38BDF8] hover:bg-slate-100 hover:rounded-xl hover:p-1">

@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="">
+    <div className="dark:bg-gray-900 ">
       <p className="items-center justify-center text-yellow-200">
         Đây là Footer
       </p>

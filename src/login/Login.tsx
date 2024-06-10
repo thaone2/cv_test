@@ -1,4 +1,14 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Login() {
+  const notify = () => {
+    // toast.success("Hello Huỳnh Minh Thạo");
+    // toast.warning("Code quá ngu", { autoClose: 1000 });
+    // toast.error("Có bug rồi");
+    toast.info("Chưa điền thông tin !!!!", { autoClose: 1000 });
+    // toast.dark("darks");
+    // toast.loading("Đợi xíu");
+  };
   return (
     <>
       <div>
@@ -35,9 +45,26 @@ function Login() {
           <button
             type="submit"
             className=" p-2 m-4 rounded-xl bg-cyan-500 shadow-lg shadow-cyan-500/50"
+            onClick={() => {
+              notify();
+            }}
           >
             Login
           </button>
+          <ToastContainer
+            position="bottom-center"
+            autoClose={1000}
+            hideProgressBar={false}
+            newestOnTop={true}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            className="toast-container"
+            toastClassName="toast"
+            bodyClassName="toast-body"
+          />
         </form>
       </div>
     </>

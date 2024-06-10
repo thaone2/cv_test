@@ -8,12 +8,16 @@ const Layout = () => {
   return (
     <>
       <Navigation />
-      <div className="grid grid-cols-7 ">
-        <LeftContent />
-        <div className="col-span-5">
+      <div className="grid grid-cols-1 md:grid-cols-7 dark:bg-gray-900 dark:text-white ">
+        <div className="hidden md:flex">
+          <LeftContent />
+        </div>
+        <div className="md:col-span-5 mt-12">
           <Outlet />
         </div>
-        <RightContent />
+        <div className="hidden md:flex">
+          <RightContent />
+        </div>
       </div>
       <Footer />
     </>

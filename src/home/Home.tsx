@@ -10,7 +10,7 @@ import omeme from "@/image/omeme.png";
 function Home() {
   return (
     <div>
-      <div className="grid grid-cols-3 m-2 ">
+      <div className="grid grid-cols-1 m-2 dark:bg-gray-900  md:grid-cols-3">
         {/* bg-slate-400 */}
         <div className=" p-4 bg-slate-400 dark:bg-gray-900 rounded-xl col-span-2 sm:col-span-3 md:col-span-2 ">
           <img
@@ -43,7 +43,7 @@ function Home() {
               </div>
               <p className="flex items-center p-2 ">
                 <SiGmail className="text-red-400 h-8 w-8 m-2" />
-                <p className=" text-xs text-gray-500">hmt46856@gmail.com</p>
+                <p className=" text-xs text-gray-500">hmt46896@gmail.com</p>
               </p>
               <p className="p-2 text-xs text-gray-500"> Phone: 0925141017</p>
             </div>
@@ -69,22 +69,27 @@ function Home() {
                 Vietnamese: Native
               </p>
             </div>
-            {/* Phan video xam */}
           </div>
         </div>
 
         {/* Right */}
         <div className="col-span-1 sm:bg-yellow-200 sm:col-span-0 sm:flex sm:flex-col sm:col-span-3 md:bg-red-200 md:col-span-1 md:flex md:flex-col lg:bg-green-200 2xl:bg-pink-400 ">
           <div className="p-2 bg-gray-400 dark:bg-gray-900 border rounded-xl mx-2 shadow-sm shadow-red-400">
-            <p className="flex bold ">SUMMARY</p>
+            <p className="flex bold uppercase">Interests</p>
             <ul className="pl-8 list-disc">
-              <li> Nghèo</li>
+              <li> Reading technology news</li>
+              <li> Playing badminton </li>
+              <li> Singing</li>
             </ul>
           </div>
           <div className="p-2 bg-gray-400 dark:bg-gray-900 border rounded-xl m-2 shadow-sm shadow-blue-400">
-            <p className="flex bold ">SKILL</p>
+            <p className="flex bold uppercase">Objective</p>
             <ul className="pl-8 list-disc">
-              <li> React JS lỏ</li>
+              <li>
+                I am eager to learn many types of front-end technologies,
+                including HTML, CSS, JavaScript, ReactJS and Tailwind. I am
+                always eager to learn new technologies and improve my skills.{" "}
+              </li>
             </ul>
           </div>
         </div>
@@ -92,9 +97,6 @@ function Home() {
 
       <div className="overflow-x-hidden m-2">
         <div className=" animate-marqueeLeft whitespace-nowrap">
-          {/* <span className="text-xl bg-red-200 bold rounded-2xl ">
-              Tình trạng hiện tại: vẫn còn độc thân
-            </span> */}
           <img className="w-40 h-40" src={omeme} alt="" />
         </div>
       </div>
